@@ -1,0 +1,12 @@
+services:
+  db:
+    build: .
+    env_file:
+      - ../.env
+    ports:
+      - "1433:1433"
+    volumes:
+      - dbdata:/var/opt/mssql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+volumes:
+  dbdata:
