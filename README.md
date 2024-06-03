@@ -32,8 +32,8 @@ A step by step series of examples that tell you how to get a development environ
 
 3. (Optional) Create a virtual environment and activate it:
     ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `.\venv\Scripts\activate`
+    python -m venv .venv
+    source .venv/bin/activate  # On Windows use `.\venv\Scripts\activate`
     ```
 
 4. Install the requirements:
